@@ -1,0 +1,19 @@
+name: FireClans
+version: 1.0.0
+main: FireClans\Main
+api: 5.0.0
+author: Firekid846
+description: Full clan system with economy integration
+
+softdepend: [BedrockEconomy]
+
+commands:
+  clan:
+    description: Clan management
+    usage: "/clan <create|disband|invite|accept|leave|kick|promote|demote|deposit|withdraw|balance|bank|info|list|members>"
+    permission: fireclans.use
+
+permissions:
+  fireclans.use:
+    description: Allows using clan commands
+    default: true
