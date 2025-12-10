@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Ayomide650/ClanBank
+build-by-default: true
+branches:
+- main
+projects:
+  ClanBank:
+    path: ""
+...
