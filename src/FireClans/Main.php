@@ -747,7 +747,9 @@ class Main extends PluginBase implements Listener {
         }
 
         usort($clans, function($a, $b) {
-            return $b["bank"] - $a["bank"];
+            $bankA = is_array($a) && isset($a["bank"]) ? (int)$a["bank"] : 0;
+            $bankB = is_array($b) && isset($b["bank"]) ? (int)$b["bank"] : 0;
+            return $bankB - $bankA;
         });
 
         $sender->sendMessage(TF::GOLD . "━━━━━━━ Top Clans ━━━━━━━");
